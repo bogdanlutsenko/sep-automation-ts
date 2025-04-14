@@ -1,0 +1,27 @@
+{
+  "name": "sep-automation-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js",
+    "test:tag": "npx cucumber-js --tags @sep23",
+    "test:smoke": "npx cucumber-js --tags @smoke",
+    "Mac-open:report": "open reports/cucumber-report.html",
+    "Windows-open:report": "start reports/cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@types/node": "^22.14.0",
+    "cucumber-html-reporter": "^6.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/cucumber": "^6.0.1"
+  }
+}
