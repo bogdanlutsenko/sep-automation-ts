@@ -1,229 +1,59 @@
 [
   {
-    "description": "    As a customer, I should be able to make payments so I can enroll in the program.",
+    "description": "    As a customer, I want to see the program start dates and refund policy details before enrolling \n    so that I can make informed decisions.",
     "elements": [
       {
         "description": "",
-        "id": "make-a-payment;verify-user-lands-on-confirmation-page-after-providing-all-valid-information",
+        "id": "program-start-dates-and-refund-dates;verify-that-the-program-start-date-and-refund-date-are-displayed",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Verify user lands on confirmation page after providing all valid information",
+        "line": 17,
+        "name": "Verify that the program start date and refund date are displayed",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2264205374
+              "duration": 595743475
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
+            "line": 14,
             "name": "user is on the enrollment page",
             "match": {
               "location": "steps/getting-started/startAndRefundDates.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1295562317
+              "duration": 1172464853
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "user has completed step one with valid information",
-            "match": {
-              "location": "steps/payment-plans/clickNextButtonStep2.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2602017961
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 18,
-            "name": "user clicks upfront payment option",
+            "name": "the program start date is displayed",
             "match": {
-              "location": "steps/payment-plans/clickNextButtonStep2.ts:27"
+              "location": "steps/getting-started/startAndRefundDates.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 27723712
+              "duration": 29121226
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 19,
-            "name": "user clicks next button",
+            "name": "the program refund date is displayed",
             "match": {
-              "location": "steps/payment-plans/clickNextButtonStep2.ts:39"
+              "location": "steps/getting-started/startAndRefundDates.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 281047893
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "user should be redirected to step three of the enrollment process",
-            "match": {
-              "location": "steps/payment-plans/clickNextButtonStep2.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3372277
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "user enters valid card information",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2824700198
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "user checks terms and conditions checkbox",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 38412133
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "user clicks pay button",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 49738912
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "user should be redirected to confirmation page",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:35"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5011116072,
-              "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@class=\\'payment-confirmation\\']')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@class=\\'payment-confirmation\\']')\u001b[22m\n\u001b[2m    9 × locator resolved to <div _ngcontent-ng-c3758746842=\"\" class=\"payment-confirmation\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at Proxy.<anonymous> (/Users/mac/Desktop/VS Code Projects/sep-automation-ts/node_modules/playwright/lib/matchers/expect.js:254:37)\n    at CustomWorld.<anonymous> (/Users/mac/Desktop/VS Code Projects/sep-automation-ts/steps/submitting-payments/makePayment.ts:36:64)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "step one should be green",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:42"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "step two should be green",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:50"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "step three should be green",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:57"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "program name should be displayed",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:64"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "user email should be displayed",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:69"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "company contact information should be displayed",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:73"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "user should see the payment confirmation message",
-            "match": {
-              "location": "steps/submitting-payments/makePayment.ts:80"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "duration": 4721158
             }
           },
           {
@@ -231,33 +61,108 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 556743440
+              "duration": 45283190
             }
           }
         ],
         "tags": [
           {
-            "name": "@sep23",
+            "name": "@sep11",
             "line": 1
           },
           {
-            "name": "@sep23-1",
-            "line": 14
+            "name": "@sep11-1",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "program-start-dates-and-refund-dates;verify-that-the-program-start-date-and-refund-date-are-correct",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verify that the program start date and refund date are correct",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 251900074
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "user is on the enrollment page",
+            "match": {
+              "location": "steps/getting-started/startAndRefundDates.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1113343420
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the displayed start date for the program is correct",
+            "match": {
+              "location": "steps/getting-started/startAndRefundDates.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23702654
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the displayed refund date for the program is correct",
+            "match": {
+              "location": "steps/getting-started/startAndRefundDates.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4195826
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 43537850
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sep11",
+            "line": 1
+          },
+          {
+            "name": "@sep11-2",
+            "line": 21
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "make-a-payment",
+    "id": "program-start-dates-and-refund-dates",
     "line": 2,
     "keyword": "Feature",
-    "name": "Make a payment",
+    "name": "Program start dates and Refund dates",
     "tags": [
       {
-        "name": "@sep23",
+        "name": "@sep11",
         "line": 1
       }
     ],
-    "uri": "features/submitting-payments/MakePayment.feature"
+    "uri": "features/getting-started/StartAndRefundDates.feature"
   }
 ]
