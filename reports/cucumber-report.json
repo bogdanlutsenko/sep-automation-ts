@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1157112856
+              "duration": 1738640550
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1299694390
+              "duration": 1644842810
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2385419844
+              "duration": 2486599301
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 45778356
+              "duration": 40173511
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 364341475
+              "duration": 271838424
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2130949
+              "duration": 2088573
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2595988227
+              "duration": 4879331133
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36390556
+              "duration": 59465965
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 52020445
+              "duration": 52740633
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5006470422,
+              "duration": 5006391709,
               "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('//div[@class=\\'payment-confirmation\\']')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('//div[@class=\\'payment-confirmation\\']')\u001b[22m\n\u001b[2m    9 × locator resolved to <div _ngcontent-ng-c3758746842=\"\" class=\"payment-confirmation\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at Proxy.<anonymous> (/Users/mac/Desktop/VS Code Projects/sep-automation-ts/node_modules/playwright/lib/matchers/expect.js:254:37)\n    at CustomWorld.<anonymous> (/Users/mac/Desktop/VS Code Projects/sep-automation-ts/steps/submitting-payments/makePayment.ts:36:64)"
             }
           },
@@ -231,7 +231,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 499733712
+              "duration": 556044141
             }
           }
         ],

@@ -1,7 +1,7 @@
 {
   "name": "sep-automation-ts",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "npx cucumber-js",
     "test:tag": "npx cucumber-js --tags @sep23",
@@ -15,7 +15,6 @@
   "description": "",
   "dependencies": {
     "@cucumber/cucumber": "^11.0.1",
-    "@types/node": "^22.14.0",
     "cucumber-html-reporter": "^6.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
